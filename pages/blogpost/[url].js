@@ -34,7 +34,7 @@ const Slug =  (props) => {
 
 export async function getServerSideProps(context){
   let {url} = context.query;
-  let response = await fetch(`https://aulth-panda.herokuapp.com/api/article/${url}`)
+  let response = await fetch(`https://panda-xi.vercel.app/api/article/${url}`)
   let data = await response.json();
   return {
     props: {

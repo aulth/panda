@@ -19,7 +19,7 @@ const Blogs = (props) => {
 
 
 export async function getServerSideProps(context){
-  let response = await fetch('https://aulth-panda.herokuapp.com/api/getarticle')
+  let response = await fetch('https://panda-xi.vercel.app/api/getarticle')
   let blogs = await response.json();
   return {
     props: {
