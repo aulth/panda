@@ -2,7 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   env:{
-    mongodburl:process.env.mongodburl
+    mongodburl:process.env.mongodburl,
+    key:process.env.key
   }
 }
 

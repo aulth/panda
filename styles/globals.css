@@ -42,11 +42,28 @@ background-repeat: no-repeat;
 background-position: center;
 z-index: -1;
 }
-div.create-pg input.create-input, div.create-pg textarea{
+div.create-pg input.create-input, div.create-pg textarea, div.contact-pg input.contact-input, div.contact-pg textarea{
 background: rgba(0, 0, 0, 0.1);
 border-radius: 10px;
 margin-top: 5px;
 }
-div.create-pg input::placeholder, div.create-pg textarea::placeholder{
+div.create-pg input::placeholder, div.create-pg textarea::placeholder, div.contact-pg input::placeholder, div.contact-pg textarea::placeholder{
 color:white
+}
+.contact-pg{
+min-height:calc(100vh - 56px);
+background:rgba(0,0,0,0.2);
+position:relative;
+}
+.contact-pg::after{
+content: " ";
+width: 100%;
+min-height: calc(100vh - 56px);
+position: absolute;
+background-image: url("/contactbg.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+z-index: -1;
+top:0;
 }
