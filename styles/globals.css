@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.blogpost {
+  padding: 20px 100px 0px 100px;
+}
+@media screen and (max-width: 600px) {
+  .blogpost {
+    padding: 20px 20px 0px 20px;
+  }
+}
+
+.home {
+  min-height: calc(100vh - 56px);
+  background-color: rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.home::after {
+  content: " ";
+  width: 100%;
+  min-height: calc(100vh - 56px);
+  position: absolute;
+  background-image: url("/homebg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+.create-pg{
+min-height:calc(100vh - 56px);
+background:rgba(0,0,0,0.2);
+position:relative;
+}
+.create-pg::after{
+content: " ";
+width: 100%;
+min-height: calc(100vh - 56px);
+position: absolute;
+background-image: url("/createbg.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+z-index: -1;
+}
+div.create-pg input.create-input, div.create-pg textarea{
+background: rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+margin-top: 5px;
+}
+div.create-pg input::placeholder, div.create-pg textarea::placeholder{
+color:white
+}
