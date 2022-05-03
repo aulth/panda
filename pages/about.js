@@ -1,8 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
+import Head from 'next/dist/shared/lib/head'
 const About = () => {
   return (
     <>
+    <Head>
+        <title>About</title>
+        <meta name="description" content="Information about panda" />
+        <meta name="keywords" content="HTML, CSS, JavaScript, Blog, Nextjs, create, post, article, author, blogging" />
+      </Head>
     <style jsx>
       {`
       .about{
@@ -30,8 +36,26 @@ const About = () => {
         Welcome to <Link href="/">Panda</Link>
       </h2>
       <p className='md:w-1/2 w-full box-border p-2'>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum aut voluptate incidunt architecto illum quis in optio id ab cupiditate voluptatibus unde numquam, voluptatum aliquam. Expedita possimus provident, aspernatur officiis praesentium consectetur quasi perspiciatis nam? Corporis dicta nihil autem voluptates earum? Dolorum quaerat laudantium id.
+        Panda is a blog where you can write articles and share your thoughts.
+        It's open source and you can contribute to it.
       </p>
+      <h2 className="text-xl font-bold my-5 text-left">
+        Technologies used in this blog
+      </h2>
+      <ul className="p-2">
+        <li className="text-sm">
+          <a href="https://nextjs.org/">Next.js</a>
+        </li>
+        <li className="text-sm">
+          <a href="https://reactjs.org/">React</a>
+        </li>
+        <li className="text-sm">
+          <a href="https://mongodb.com">Mongodb</a>
+          </li>
+        <li className="text-sm">
+          <a href="https://nodejs.org/en/">Node.js</a>
+        </li>
+       </ul>
     </div>
     </>
   )

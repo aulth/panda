@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import Head from 'next/head';
 const Create = () => {
     const [article, setArticle] = useState({ title: '', content: '', url: '', description: '', image: '', author: '' })
     const date = new Date();
@@ -32,6 +32,11 @@ const Create = () => {
     }
     return (
         <>
+        <Head>
+        <title>Create article</title>
+        <meta name="description" content="Publish your own article to mypanda.vercel.app" />
+        <meta name="keywords" content="HTML, CSS, JavaScript, Blog, Nextjs, create, post, article, author, blogging" />
+      </Head>
             <div className="w-full border-box flex flex-col create-pg items-center">
                 <h1 className="text-2xl font-bold pt-5">Create a new blog post</h1>
                 <form className="w-full flex flex-col items-center p-5 text-white" onSubmit={handleOnSubmit}>

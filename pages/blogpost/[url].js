@@ -1,5 +1,6 @@
 import React ,{useEffect, useState} from 'react'
 import ErrorPage from 'next/error'
+import Head from 'next/dist/shared/lib/head'
 const Slug =  (props) => {
   const [blog, setBlog] = useState(props.blog.blog)
   function createMarkup(content){
@@ -11,6 +12,12 @@ const Slug =  (props) => {
     <>
      {
        blog &&
+      <>
+ <Head>
+        <title>{blog.title}</title>
+        <meta name="description" content={blog.description}/>
+        <meta name="keywords" content="HTML, CSS, JavaScript, Blog, Nextjs, create, post, article, author, blogging" />
+      </Head> 
        <div className="w-full flex flex-col items-center box-border p-2">
       <div className="w-full flex flex-col box-border p-2 items-center border-b border-gray-300">
       <h1 className="text-2xl font-bold">
@@ -20,6 +27,7 @@ const Slug =  (props) => {
       </div>
       <div className="w-full flex flex-col items-center box-border blogpost" dangerouslySetInnerHTML={createMarkup(blog.content)}></div>
     </div>
+    </>
      }
      
      {
