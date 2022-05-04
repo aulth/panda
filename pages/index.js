@@ -14,6 +14,7 @@ export default function Home(props) {
         <title>Panda - Blog</title>
         <meta name="description" content="Panda - Best Blogging Platform" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="google-site-verification" content="2Ii8X_9GYq3lZtKo33o6boJYW9GMfW3hWW1IhUKLKHE" />
       </Head>
       <div className="w-full flex flex-col items-center box-border home text-white">
         <h1 className="text-2xl my-3">
