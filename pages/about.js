@@ -37,7 +37,7 @@ const About = () => {
       </h2>
       <p className='md:w-1/2 w-full box-border p-2'>
         Panda is a blog where you can write articles and share your thoughts.
-        It's open source and you can contribute to it.
+        It is open source and you can contribute to it.
       </p>
       <h2 className="text-xl font-bold my-5 text-left">
         Technologies used in this blog
