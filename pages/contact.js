@@ -33,6 +33,7 @@ const Contact = () => {
         <title>Contact</title>
         <meta name="description" content="Contact myPanda Blog Author" />
         <meta name="keywords" content="HTML, CSS, JavaScript, Blog, Nextjs" />
+        <link rel="icon" href="/contact.ico" />
       </Head>
       <div className="w-full contact-pg flex flex-col items-center text-white">
         <h1 className="text-2xl font-bold p-2">Contact Us</h1>

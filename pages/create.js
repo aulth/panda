@@ -34,6 +34,7 @@ const Create = () => {
         <>
         <Head>
         <title>Create article</title>
+        <link rel="icon" href="/create.ico" />
         <meta name="description" content="Publish your own article to mypanda.vercel.app" />
         <meta name="keywords" content="HTML, CSS, JavaScript, Blog, Nextjs, create, post, article, author, blogging" />
       </Head>

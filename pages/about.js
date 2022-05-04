@@ -8,6 +8,7 @@ const About = () => {
         <title>About</title>
         <meta name="description" content="Information about panda" />
         <meta name="keywords" content="HTML, CSS, JavaScript, Blog, Nextjs, create, post, article, author, blogging" />
+        <link rel="icon" href="/about.ico" />
       </Head>
     <style jsx>
       {`

@@ -8,6 +8,7 @@ const Blogs = (props) => {
     <>
     <Head>
         <title>Panda - Blogs</title>
+        <link rel="icon" href="/blog.ico" />
         <meta name="description" content="All blogs posted on mypanda.vercel.app" />
         <meta name="keywords" content="HTML, CSS, JavaScript, Blog, Nextjs, create, post, article, author, blogging" />
       </Head>
