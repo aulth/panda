@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Head from 'next/head';
+import Footer from '../components/Footer';
 const Create = () => {
     const [article, setArticle] = useState({ title: '', content: '', url: '', description: '', image: '', author: '' })
     const date = new Date();
@@ -50,6 +51,7 @@ const Create = () => {
                     <input className="w-full border-b border-gray-300 p-2 bg-gray-800 cursor-pointer hover:bg-gray-700" type="submit" value='Post' />
                 </form>
             </div>
+            <Footer/>
         </>
     )
 }

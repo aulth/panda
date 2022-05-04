@@ -1,6 +1,7 @@
 import Head from 'next/head'
 // import Blogs, { getServerSideProps } from './blog'
 import Blogitem from '../components/Blogitem'
+import Footer from '../components/Footer'
 export default function Home(props) {
   const posts = props.blogs.posts
   return (
@@ -30,6 +31,7 @@ export default function Home(props) {
           </ul>
         </div>
       </div>
+      <Footer/>
     </>
   )
 }

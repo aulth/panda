@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import Blogitem from "../components/Blogitem";
 import Head from "next/dist/shared/lib/head";
+import Footer from "../components/Footer";
 const Blogs = (props) => {
   console.log(props.blogs.posts)
   const [articles, setArticles] = useState(props.blogs.posts)
@@ -20,6 +21,7 @@ const Blogs = (props) => {
           })}
         </ul>
       </div>
+      <Footer/>
     </>
   );
 };

@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/dist/shared/lib/head'
+import Footer from '../components/Footer'
 const About = () => {
   return (
     <>
@@ -58,6 +59,7 @@ const About = () => {
         </li>
        </ul>
     </div>
+    <Footer/>
     </>
   )
 }

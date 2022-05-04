@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
+import Footer from "../components/Footer";
 const Contact = () => {
   const [contact, setContact] = useState({ name: "", email: "", message: "" });
   const handleOnChange = (e) => {
@@ -75,6 +76,7 @@ const Contact = () => {
           />
         </form>
       </div>
+      <Footer/>
     </>
   );
 };
